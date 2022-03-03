@@ -25,17 +25,45 @@
 <body>
 
     <main>
-        <div class="container">
+        <div class="container mb-5 p-5">
             <div class="row">
-                <div class="col-12 text-center p-5">
+                <div class="col-12 text-center p-3">
                     <h1 class="text-uppercase text-primary">è palindroma?</h1>
                     <p>Inserisci una parola qualsiasi è verifica se è palindroma</p>
                 </div>
                 <div class="col-12">
-                    <div class="my-wrapper-form p-2 text-center">
-                        <label for="Inserisci una parola"></label>
+                    <div class="my-wrapper-form p-1 text-center">
                         <input type="text" id="user-word">
                         <button type="button" class="btn btn-primary ms-2">Palindroma?</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container p-5">
+            <div class="row">
+                <div class="col-12 text-center p-3">
+                    <h1 class="text-uppercase text-primary">pari o dispari?</h1>
+                    <p>Inserisci un numero compreso tra 1 e 5, scegli pari o dispari</p>
+                </div>
+                <div class="col-12">
+                    <div class="my-wrapper-form-numbers p-1 text-center">
+                        <input type="number" id="user-number" class="mb-3">
+
+                        <form action="" class="mb-3">
+                        <div class="form-check form-check-inline ms-3">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="pari"
+                                value="pari" checked>
+                            <label class="form-check-label" for="pari">pari</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="dispari"
+                                value="dispari">
+                            <label class="form-check-label" for="dispari">dispari</label>
+                        </div>
+                    </form>
+                        <button type="button" id="button-number" class="btn btn-primary ms-2">Play</button>
+                        
                     </div>
                 </div>
             </div>
