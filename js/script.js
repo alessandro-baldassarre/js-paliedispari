@@ -93,7 +93,7 @@ function randomInt (minNumber, maxNumber){
 
 function isSumEven (firstNumber, secondNumber){
 
-    if((firstNumber + secondNumber) % 2 == 0){
+    if(((firstNumber + secondNumber) % 2) == 0){
 
         return true;
     }
@@ -113,7 +113,7 @@ numberButton.addEventListener("click", function(){
 
     const checkEven = document.getElementById("pari").checked;
 
-    const userNumber = document.getElementById("user-number").value;
+    const userNumber = Math.floor(document.getElementById("user-number").value);
 
     if(isNaN(userNumber) || (userNumber < 1 || userNumber > 5)){
         alert("hai inserito un valore non valido!");
